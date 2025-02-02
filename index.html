@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin: 1rem auto;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#ECF2FF] flex flex-col md:items-center md:justify-center h-[100%] min-h-screen overflow-y-auto"
+  >
+    <!-- <input type="color" name="" id="" /> -->
+    <main class="flex flex-col md:flex-row">
+      <div
+        class="bg-[#5F3FFC] text-[#c8c7ff] w-full md:w-1/2 p-4 md:p-8 rounded-b-2xl md:rounded-2xl -mb-4 md:-mr-4 md:mb-0 relative z-10 text-center flex flex-col justify-center items-center gap-4"
+      >
+        <h2 class="text-xl font-semibold">Your Result</h2>
+        <div
+          class="bg-linear-to-b from-[#4B24CC] to-[#4B24CC]/10 w-[200px] h-[200px] rounded-full flex flex-col items-center justify-center"
+        >
+          <h3 class="text-7xl text-white font-bold leading-tight">76</h3>
+          <p class="text-sm">of 100</p>
+        </div>
+        <h2 class="text-white font-bold text-2xl">Great</h2>
+        <p class="w-[80%]">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+
+      <div
+        class="bg-[#fff] w-full md:w-1/2 py-[2.5rem] p-4 md:p-8 md:pl-[3rem] relative rounded-b-2xl md:rounded-e-2xl flex flex-col item-center justify-center gap-4"
+      >
+        <h2 class="font-semibold text-xl">Summary</h2>
+
+        <div class="flex flex-col gap-4">
+          <div
+            class="bg-[#ff5757]/10 flex justify-between items-center p-3 rounded-lg"
+          >
+            <div class="flex item-center gap-1">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="a reaction icon"
+              />
+              <p class="text-[#ff5757] font-bold">Reaction</p>
+            </div>
+            <p class="font-bold">
+              80 <span class="text-[#303b5a]/40">/ 100</span>
+            </p>
+          </div>
+
+          <div
+            class="bg-[#ffb01f]/10 flex justify-between items-center p-3 rounded-lg"
+          >
+            <div class="flex item-center gap-1">
+              <img src="./assets/images/icon-memory.svg" alt="a memory icon" />
+
+              <p class="text-[#ffb01f] font-bold">Memory</p>
+            </div>
+            <p class="font-bold">
+              92 <span class="text-[#303b5a]/40">/ 100</span>
+            </p>
+          </div>
+
+          <div
+            class="bg-[#00bd91]/10 flex justify-between items-center p-3 rounded-lg"
+          >
+            <div class="flex item-center gap-1">
+              <img src="./assets/images/icon-verbal.svg" alt="a verbal icon" />
+              <p class="text-[#00bd91] font-bold">Verbal</p>
+            </div>
+            <p class="font-bold">
+              61 <span class="text-[#303b5a]/40">/ 100</span>
+            </p>
+          </div>
+
+          <div
+            class="bg-[#1125d4]/10 flex justify-between items-center p-3 rounded-lg"
+          >
+            <div class="flex item-center gap-1">
+              <img src="./assets/images/icon-visual.svg" alt="a visual icon" />
+              <p class="text-[#1125d4] font-bold">Visual</p>
+            </div>
+            <p class="font-bold">
+              72 <span class="text-[#303b5a]/40">/ 100</span>
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="bg-[#303b5a] text-white p-3 w-[90%] rounded-2xl mx-auto mt-4"
+        >
+          Continue
+        </button>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Yusuf Muhammad Najeeb Only...</a>.
+    </div>
+  </body>
+</html>
